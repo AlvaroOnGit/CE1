@@ -6,6 +6,7 @@
     <title>Card Query</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="//cdn.jsdelivr.net/npm/keyrune@latest/css/keyrune.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <header>
@@ -58,22 +59,167 @@
 <div class="layout-container">
     <aside class="sidebar">
         <div class="sidebar-container">
-            <div class="sidebar-button">
-                <button class="sidebar-close-button">
-                    <span class="material-symbols-outlined">chevron_backward</span>
-                    <span class="sidebar-close-button-text">Close Sidebar</span>
+            <div class="sidebar-item">
+                <button class="sidebar-close-button" id="sidebar-close-button">
+                    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+                    <span class="sidebar-close-button-text">Close menu</span>
                 </button>
             </div>
-            <div class="expansion-group">
-
+            <div class="sidebar-item" id="sidebar-divider1">
+                <hr class="sidebar-divider"/>
+            </div>
+            <div class="sidebar-item" id="sidebar-searchbar" hidden>
+                <div class="sidebar-searchbar-container">
+                    <span class="material-symbols-outlined" id="sidebar-searchbar-icon">search</span>
+                    <label>
+                        <input class="sidebar-searchbar-input" type="text" placeholder="Search Cardquery">
+                    </label>
+                </div>
+            </div>
+            <div class="expansion-item">
+                <div class="expansion-group">
+                    <div class="expansion-group-title">
+                        <h2 class="expansion-title">Magic the Gathering</h2>
+                        <span class="material-symbols-outlined">keyboard_arrow_up</span>
+                    </div>
+                    <div class="expansion-group-content">
+                        <span class="ss ss-ecl ss-3x ss-fw ss-grad ss-mythic" title="Lorwyn Eclipsed"></span>
+                        <span class="ss ss-eoe ss-3x ss-fw ss-grad ss-mythic" title="Edge of Eternities"></span>
+                        <span class="ss ss-tdm ss-3x ss-fw ss-grad ss-mythic" title="Tarkir: Dragonstorm"></span>
+                        <span class="ss ss-dft ss-3x ss-fw ss-grad ss-mythic" title="Aetherdrift"></span>
+                        <span class="ss ss-dsk ss-3x ss-fw ss-grad ss-mythic" title="Duskmourne"></span>
+                        <span class="ss ss-blb ss-3x ss-fw ss-grad ss-mythic" title="Bloomborrow"></span>
+                        <span class="ss ss-big ss-3x ss-fw ss-grad ss-mythic" title="The Big Score"></span>
+                        <span class="ss ss-otj ss-3x ss-fw ss-grad ss-mythic" title="Outlwas of Thunder Junction"></span>
+                        <span class="ss ss-mkm ss-3x ss-fw ss-grad ss-mythic" title="Murders at Karlov Manor"></span>
+                        <span class="ss ss-lci ss-3x ss-fw ss-grad ss-mythic" title="Lost Caverns of Ixalan"></span>
+                        <span class="ss ss-woe ss-3x ss-fw ss-grad ss-mythic" title="Wilds of Eldraine"></span>
+                        <span class="ss ss-mat ss-3x ss-fw ss-grad ss-mythic" title="March of the Machines: The Aftermath"></span>
+                        <span class="ss ss-mom ss-3x ss-fw ss-grad ss-mythic" title="March of the Machine"></span>
+                        <span class="ss ss-one ss-3x ss-fw ss-grad ss-mythic" title="Phyrexia: All Will Be One"></span>
+                        <span class="ss ss-bro ss-3x ss-fw ss-grad ss-mythic" title="The Brothers' War"></span>
+                        <span class="ss ss-dmu ss-3x ss-fw ss-grad ss-mythic" title="Dominaria United"></span>
+                        <span class="ss ss-snc ss-3x ss-fw ss-grad ss-mythic" title="Streets of New Capenna"></span>
+                        <span class="ss ss-neo ss-3x ss-fw ss-grad ss-mythic" title="Kamigawa: Neon Dynasty"></span>
+                        <span class="ss ss-vow ss-3x ss-fw ss-grad ss-mythic" title="Innistrad: Crimson Vow"></span>
+                        <span class="ss ss-mid ss-3x ss-fw ss-grad ss-mythic" title="Innistrad: Midnight Hunt"></span>
+                        <span class="ss ss-stx ss-3x ss-fw ss-grad ss-mythic" title="Strixhaven: School of Mages"></span>
+                        <span class="ss ss-khm ss-3x ss-fw ss-grad ss-mythic" title="Kaldheim"></span>
+                        <span class="ss ss-znr ss-3x ss-fw ss-grad ss-mythic" title="Zendikar Rising"></span>
+                        <span class="ss ss-iko ss-3x ss-fw ss-grad ss-mythic" title="Ikoria: Lair of Behemoths"></span>
+                        <span class="ss ss-thb ss-3x ss-fw ss-grad ss-mythic" title="Theros: Beyond Death"></span>
+                        <span class="ss ss-eld ss-3x ss-fw ss-grad ss-mythic" title="Throne of Eldraine"></span>
+                        <span class="ss ss-war ss-3x ss-fw ss-grad ss-mythic" title="War of the Spark"></span>
+                    </div>
+                </div>
+                <div class="expansion-group">
+                    <div class="expansion-group-title">
+                        <h2 class="expansion-title">Universes Beyond</h2>
+                        <span class="material-symbols-outlined">keyboard_arrow_up</span>
+                    </div>
+                    <div class="expansion-group-content">
+                        <span class="ss ss-tmt ss-3x ss-fw ss-grad ss-mythic" title="Teenage Mutant Ninja Turtles"></span>
+                        <span class="ss ss-tla ss-3x ss-fw ss-grad ss-mythic" title="Avatar: The Last Airbender"></span>
+                        <span class="ss ss-spm ss-3x ss-fw ss-grad ss-mythic" title="Marvel Spider-Man"></span>
+                        <span class="ss ss-fin ss-3x ss-fw ss-grad ss-mythic" title="Final Fantasy"></span>
+                        <span class="ss ss-pip ss-3x ss-fw ss-grad ss-mythic" title="Universes Beyond: Fallout"></span>
+                        <span class="ss ss-who ss-3x ss-fw ss-grad ss-mythic" title="Universes Beyond: Doctor Who"></span>
+                        <span class="ss ss-ltr ss-3x ss-fw ss-grad ss-mythic" title="The Lord of the Rings: Tales of Middle-Earth"></span>
+                        <span class="ss ss-40k ss-3x ss-fw ss-grad ss-mythic" title="Warhammer 40K"></span>
+                        <span class="ss ss-acr ss-3x ss-fw ss-grad ss-mythic" title="Universes Beyond: Assassin's Creed"></span>
+                        <span class="ss ss-afr ss-3x ss-fw ss-grad ss-mythic" title="Adventures in the Forgotten Realms"></span>
+                    </div>
+                </div>
+                <div class="expansion-group">
+                    <div class="expansion-group-title">
+                        <h2 class="expansion-title">Commander</h2>
+                        <span class="material-symbols-outlined">keyboard_arrow_up</span>
+                    </div>
+                    <div class="expansion-group-content">
+                        <span class="ss ss-tmc ss-3x ss-fw ss-grad ss-mythic" title="Teenage Mutant Ninja Turtles Eternal-Legal"></span>
+                        <span class="ss ss-ecc ss-3x ss-fw ss-grad ss-mythic" title="Lorwyn Eclipsed Commander"></span>
+                        <span class="ss ss-eoc ss-3x ss-fw ss-grad ss-mythic" title="Edge of Eternities Commander"></span>
+                        <span class="ss ss-fic ss-3x ss-fw ss-grad ss-mythic" title="Final Fantasy Commander"></span>
+                        <span class="ss ss-tdc ss-3x ss-fw ss-grad ss-mythic" title="Tarkir: Dragonstorm Commander"></span>
+                        <span class="ss ss-drc ss-3x ss-fw ss-grad ss-mythic" title="Aetherdrift Commander"></span>
+                        <span class="ss ss-fdc ss-3x ss-fw ss-grad ss-mythic" title="Foundations Commander"></span>
+                        <span class="ss ss-dsc ss-3x ss-fw ss-grad ss-mythic" title="Duskmourn Commander"></span>
+                        <span class="ss ss-m3c ss-3x ss-fw ss-grad ss-mythic" title="Modern Horizons 3 Commander"></span>
+                        <span class="ss ss-blc ss-3x ss-fw ss-grad ss-mythic" title="Bloomburrow Commander"></span>
+                        <span class="ss ss-otc ss-3x ss-fw ss-grad ss-mythic" title="Outlaws of Thunder Junction Commander"></span>
+                        <span class="ss ss-mkc ss-3x ss-fw ss-grad ss-mythic" title="Murders at Karlov Manor Commander"></span>
+                        <span class="ss ss-lcc ss-3x ss-fw ss-grad ss-mythic" title="Lost Caverns of Ixalan Commander"></span>
+                        <span class="ss ss-woc ss-3x ss-fw ss-grad ss-mythic" title="Wilds of Eldraine Commander"></span>
+                        <span class="ss ss-cmm ss-3x ss-fw ss-grad ss-mythic" title="Commander Masters"></span>
+                        <span class="ss ss-scd ss-3x ss-fw ss-grad ss-mythic" title="Starter Commander Decks"></span>
+                        <span class="ss ss-moc ss-3x ss-fw ss-grad ss-mythic" title="March of the Machine Commander"></span>
+                        <span class="ss ss-onc ss-3x ss-fw ss-grad ss-mythic" title="Phyrexia: All Will Be One Commander"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </aside>
     <main class="layout-content">
-        <div class="feed-container">
+        <section class="feed-container">
             <span class="material-symbols-outlined">release_alert</span>
             <p class="feed-text">This is a text describing an application wide alert</p>
-        </div>
+        </section>
+        <section class="banner-container"></section>
+        <section class="filterbar">
+            <div class="filterbar-menu">
+                <div class="filterbar-item">
+                    <span class="ss ss-ecl ss-2x ss-fw ss-grad ss-mythic" title="Lorwyn Eclipsed" id="filterbar-expansion-name"></span>
+                    <h1>Lorwyn Eclipsed</h1>
+                </div>
+                <div class="filterbar-item">
+                    <hr class="filterbar-divider">
+                </div>
+                <div class="filterbar-item">
+                    <div class="filterbar-color-filters">
+                        <span>Filter by</span>
+                        <img src="media/color-u.webp" alt="Blue color filter" title="Filter by blue mana">
+                        <img src="media/color-b.webp" alt="Black color filter" title="Filter by black mana">
+                        <img src="media/color-w.webp" alt="White color filter" title="Filter by white mana">
+                        <img src="media/color-r.webp" alt="Red color filter" title="Filter by red mana">
+                        <img src="media/color-g.webp" alt="Green color filter" title="Filter by green mana">
+                    </div>
+                </div>
+                <div class="filterbar-item">
+                    <hr class="filterbar-divider">
+                </div>
+                <div class="filterbar-item">
+                    <div class="filterbar-advanced">
+                        <span id="filterbar-advanced-text">Advanced filters</span>
+                        <span class="material-symbols-outlined" title="Advanced filters">filter_list</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card-container">
+                <img src="https://cards.scryfall.io/large/front/b/f/bf708169-a307-494b-b8d8-baae53b2e2f2.jpg?1767658678" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/large/front/6/e/6e53f246-8347-4632-9d5b-4aeb12f7b762.jpg?1767951683" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/6/1/6124a691-ae83-4d22-a177-0aee65b47064.jpg?1767951721" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/6/8/68ce9752-21f9-48e9-bf48-7f76f1cecbc5.jpg?1767692118" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/9/a/9af9a907-fd2e-4ae0-ac7b-529074b79a14.jpg?1767871750" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/7/d/7d7faefe-9c0d-45b6-8ea4-5fa666762a2c.jpg?1759144841" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/f/e/fe3a421d-07b6-4b94-b177-aec44c7fe689.jpg?1759144840" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/6/9/6995b308-5582-4ca1-ab10-a536d5ca0a6d.jpg?1767732784" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/e/6/e64bfe16-7362-4982-9136-1f4e0d335441.jpg?1767871817" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.jpg?1767658343" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/8/f/8ff1a13c-e338-42e9-8eb3-b303fabd67de.jpg?1767957075" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/9/8/98210276-1b85-4db5-8ab4-ecb08f5d2ee2.jpg?1767862363" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/2/c/2c0fcf98-1f3c-4cff-9234-7f3d0c8b22e9.jpg?1767732575" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/7/1/7127164d-f2a3-4d79-b6db-93507ff5ab47.jpg?1759144841" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/3/5/3515531a-45d6-4fe0-96a3-7ca1ce545068.jpg?1767871828" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/5/2/5201bdeb-ba47-459b-ac0d-603367914578.jpg?1767952066" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/6/d/6da63cc5-4624-4491-abd9-9b600c3fefe2.jpg?1759144844" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/8/7/877d9b75-ad2f-45a6-94d8-68e80d7db789.jpg?1767732723" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/b/a/ba86688d-18f0-4b5c-a797-42bf125a6c9f.jpg?1767658349" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/3/8/382b83c0-bbbc-4db8-bc04-cfea79aed1b3.jpg?1767732510" alt="Card image" class="card-image">
+                <img src="https://cards.scryfall.io/normal/front/b/0/b0b67eb9-0d88-4f2c-8063-e8bedfa78556.jpg?1767952311" alt="Card image" class="card-image">
+            </div>
+        </section>
     </main>
 </div>
 </body>
